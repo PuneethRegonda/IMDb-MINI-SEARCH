@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: new ThemeData(
           fontFamily: "QuickSand",
-          accentColor:Color(0xeFF2a2a2e),
+          accentColor: Colors.white,
           primaryColor: Color(0xeFF2a2a2e),),
         debugShowCheckedModeBanner: false,
         title: 'MovieQuery',

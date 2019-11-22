@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:movie_query/core/api/datamodels.dart';
+import 'package:movie_query/core/core.dart';
 import 'package:movie_query/features/movieSearch/data/adapaterUIandrepositry.dart';
 import 'package:movie_query/features/movieSearch/repository/resultMovieRepo.dart';
 

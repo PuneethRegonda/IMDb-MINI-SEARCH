@@ -1,6 +1,5 @@
-import 'package:movie_query/core/api/apiCredentials.dart';
-import 'package:movie_query/core/api/datamodels.dart';
-import 'package:movie_query/core/api/exceptions.dart';
+
+import 'package:movie_query/core/core.dart';
 
 class SearchedMovieRepository {
   Future<List<Movie>> fetchMoviesList() async {

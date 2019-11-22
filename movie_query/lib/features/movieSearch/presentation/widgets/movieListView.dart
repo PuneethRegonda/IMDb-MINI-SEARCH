@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_query/core/api/datamodels.dart';
+import 'package:movie_query/core/core.dart';
 import 'package:movie_query/features/movieSearch/presentation/widgets/movieCard.dart';
 
 class MovieListView extends StatelessWidget {
