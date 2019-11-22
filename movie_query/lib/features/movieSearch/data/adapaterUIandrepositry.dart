@@ -6,11 +6,10 @@ class ApiResponse<T> {
   ApiResponse.loading(this.message) : status = Status.LOADING;
   ApiResponse.completed(this.data) : status = Status.COMPLETED;
   ApiResponse.error(this.message) : status = Status.ERROR;
-  ApiResponse.noReslutsFound(this.message) : status = Status.NORESFOUND;
   @override
   String toString() {
     return "Status : $status \n Message : $message \n Data : $data";
   }
 }
 
-enum Status { NORESFOUND, EMPTYSTRING, LOADING, COMPLETED, ERROR }
+enum Status {EMPTYSTRING, LOADING, COMPLETED, ERROR }

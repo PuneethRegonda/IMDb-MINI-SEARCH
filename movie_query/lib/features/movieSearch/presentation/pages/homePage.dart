@@ -37,12 +37,8 @@ class HomeScreen extends StatelessWidget {
                       break;
                     case Status.ERROR:
                       return Center(
-                        child: Text(
-                            "There is an Error ${snapshot.data.toString()}"),
+                        child: Text(snapshot.data.message),
                       );
-                      break;
-                    case Status.NORESFOUND:
-                      return Container(child: Text("No Results Found"));
                       break;
                   }
                 }

@@ -25,7 +25,7 @@ class Api {
       http.Response response = await http.get(url);
       jsonResponse = _returnResponse(response);
     } on SocketException {
-      throw FetchDataException("NO INTERNET CONNECTION");
+      throw FetchDataException("Please Check Your Internet Connection.");
     }
     return jsonResponse;
   }
@@ -34,7 +34,6 @@ class Api {
     switch (response.statusCode) {
       case 200:
         var responseJson = json.decode(response.body.toString());
-
         return responseJson;
       default:
         throw FetchDataException(

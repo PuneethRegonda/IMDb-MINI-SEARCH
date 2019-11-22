@@ -1,11 +1,10 @@
 class ApiException implements Exception {
   final message;
-  final prefix;
 
-  ApiException([this.message, this.prefix]);
+  ApiException([this.message]);
 
   String toString() {
-    return "$message" + "$prefix";
+    return "$message";
   }
 }
 
@@ -16,13 +15,13 @@ class ApiException implements Exception {
 
 
 class FetchDataException extends ApiException {
-  FetchDataException([message]) : super([message,"No Internet:"]);
+  FetchDataException([message]) : super(message);
 }
 
 class TooManyResults extends ApiException {
-  TooManyResults([message]) : super(message, "Too Many Results:");
+  TooManyResults([message]) : super(message);
 }
 
-class MoviewNotFoundException extends ApiException {
-  MoviewNotFoundException([message]) : super(message, "No Results Found:");
+class MovieNotFoundException extends ApiException {
+  MovieNotFoundException([message]) : super(message, );
 }
