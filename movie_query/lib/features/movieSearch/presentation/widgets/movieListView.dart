@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_query/core/api/datamodels.dart';
+import 'package:movie_query/features/movieSearch/presentation/widgets/movieCard.dart';
 
 class MovieListView extends StatelessWidget {
   final List<Movie> movieList;
@@ -9,13 +10,28 @@ class MovieListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 200.0,
-      child: ListView.builder(
-        scrollDirection: Axis.vertical,
-        itemCount: movieList.length,
-        itemBuilder: (context, int index) => Card(
-          child: Text(movieList[index].title),
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: <Widget>[
+          Expanded(
+            child: GridView.builder(
+              physics: BouncingScrollPhysics(),
+              gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                childAspectRatio: 70/100,
+                  crossAxisCount: 2),
+              scrollDirection: Axis.vertical,
+              itemCount: movieList.length,
+              itemBuilder: (context, int index) => Container(
+                child: MovieCard(
+                  indexnumberforHero: index,
+                  movie: movieList[index],
+                  posterUrl: movieList[index].posterUrl,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

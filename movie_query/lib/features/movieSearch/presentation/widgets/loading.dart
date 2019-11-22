@@ -8,12 +8,14 @@ class Loading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        children: <Widget>[
-          CircularProgressIndicator(),
-          Text("$loadingMessage"),
-         ],
-      ),
-    );
+        child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisSize: MainAxisSize.max,
+    children: <Widget>[
+      CircularProgressIndicator(),
+      Text("$loadingMessage"),
+     ],
+        ),
+      );
   }
 }
