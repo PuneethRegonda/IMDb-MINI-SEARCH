@@ -1,4 +1,4 @@
-# IMDB- MINI-SEARCH APP
+# IMDB - MINI-SEARCH APP
 ### Purpose - USED AS POC
 A Flutter Powered Application , with the OMDb API.
 
