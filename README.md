@@ -25,6 +25,7 @@ USED API called OMDb API
 ## SHOWCASE 
 
 <div align="center">
+    <p>Sneek Peek 1</p><img src="/ReadMeSupport/InstantSearch.gif" width="400px", hspace="20"</img>
     <p>Sneek Peek 1</p><img src="/ReadMeSupport/SneekPeek1.gif" width="400px", hspace="20"</img>
     <p>ERROR Handinling</p><img src="/ReadMeSupport/ErrorHandlingSupport.gif" width="400px",hspace="20"</img> 
     <p>Poster Download Support</p><img src="/ReadMeSupport/PosterDownloadSupport.gif" width="400px", hspace="20"</img> 
