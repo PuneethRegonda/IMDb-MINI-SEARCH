@@ -1,5 +1,5 @@
 
-import 'package:movie_query/core/core.dart';
+import '../../../core/core.dart';
 
 class SearchedMovieRepository {
   Future<List<Movie>> fetchMoviesList() async {

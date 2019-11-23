@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movie_query/core/core.dart';
-import 'package:movie_query/features/movieSearch/presentation/widgets/movieCard.dart';
+
+import '../../../../core/core.dart';
+import 'movieCard.dart';
 
 class MovieListView extends StatelessWidget {
   final List<Movie> movieList;

@@ -1,9 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:movie_query/common/textTheam.dart';
-import 'package:movie_query/core/core.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../../../common/textTheam.dart';
+import '../../../../core/core.dart';
 
 class MovieDescription extends StatelessWidget {
   final Movie movie;

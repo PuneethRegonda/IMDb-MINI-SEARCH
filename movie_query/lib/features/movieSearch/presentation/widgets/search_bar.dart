@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:movie_query/common/textTheam.dart';
-import 'package:movie_query/features/movieSearch/presentation/bloc/myBloc.dart';
-import 'package:movie_query/features/movieSearch/presentation/bloc/queryBloc.dart';
+
+import '../../../../common/textTheam.dart';
+import '../bloc/myBloc.dart';
+import '../bloc/queryBloc.dart';
 
 class SearchBar extends StatefulWidget {
   SearchBar({

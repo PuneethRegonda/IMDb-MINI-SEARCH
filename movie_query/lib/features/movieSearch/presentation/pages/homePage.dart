@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:movie_query/common/textTheam.dart';
-import 'package:movie_query/core/core.dart';
-import 'package:movie_query/features/movieSearch/data/adapaterUIandrepositry.dart';
-import 'package:movie_query/features/movieSearch/presentation/bloc/queryBloc.dart';
-import 'package:movie_query/features/movieSearch/presentation/widgets/widget.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../../../common/textTheam.dart';
+import '../../../../core/core.dart';
+import '../../data/adapaterUIandrepositry.dart';
+import '../bloc/queryBloc.dart';
+import '../widgets/widget.dart';
 
 class HomeScreen extends StatelessWidget {
   final _queryBloc = QueryBloc();

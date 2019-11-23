@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:movie_query/core/core.dart';
-import 'package:movie_query/features/movieSearch/data/adapaterUIandrepositry.dart';
-import 'package:movie_query/features/movieSearch/repository/resultMovieRepo.dart';
+import '../../../../core/core.dart';
+import '../../data/adapaterUIandrepositry.dart';
+import '../../repository/resultMovieRepo.dart';
 
 class QueryBloc {
   static final StreamController<ApiResponse<List<Movie>>>

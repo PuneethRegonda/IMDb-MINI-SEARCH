@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:http/http.dart' as http;
-import 'package:movie_query/features/movieSearch/presentation/bloc/myBloc.dart';
 
+import '../../features/movieSearch/presentation/bloc/myBloc.dart';
 import 'exceptions.dart';
 
 class Api {

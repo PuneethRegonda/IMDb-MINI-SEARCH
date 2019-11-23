@@ -1,5 +1,6 @@
 import 'dart:async';
-import 'package:movie_query/features/movieSearch/repository/resultMovieRepo.dart';
+
+import '../../repository/resultMovieRepo.dart';
 
 class MovieSearchBloc {
   static String _movienametyped = "";

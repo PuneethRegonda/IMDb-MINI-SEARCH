@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:movie_query/common/textTheam.dart';
-import 'package:movie_query/core/core.dart';
-import 'package:movie_query/features/movieSearch/presentation/pages/movieDescriptionPage.dart';
+
+import '../../../../common/textTheam.dart';
+import '../../../../core/core.dart';
+import '../pages/movieDescriptionPage.dart';
 
 class MovieCard extends StatelessWidget {
   final String posterUrl;
