@@ -30,6 +30,13 @@ class _SearchBarState extends State<SearchBar> {
     });
   }
 
+  void clearLastText() {
+    Future.delayed(Duration(milliseconds: 50)).then((_){ textFieldcontroller.clear();}).then((_){
+    _bloc.cleartheText();
+    });
+  }
+
+  final TextEditingController textFieldcontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -47,19 +54,28 @@ class _SearchBarState extends State<SearchBar> {
                   children: <Widget>[
                     AnimatedContainer(
                       width: selected
-                          ? MediaQuery.of(context).size.width * 70 / 100
+                          ? MediaQuery.of(context).size.width * 75 / 100
                           : 0.09,
                       height: 60.0,
                       alignment:
                           selected ? Alignment.center : Alignment.topRight,
                       curve: Curves.easeInOut,
                       child: TextFormField(
+                        controller: textFieldcontroller,
                         style: textstyle,
                         onChanged: (String value) {
                           _bloc.searchEventSink.add(value.trim());
                         },
                         onFieldSubmitted: (_) => onSearchTap(),
                         decoration: InputDecoration(
+                            suffixIcon: selected?IconButton(
+                              iconSize: 18.0,
+                              color: Colors.white,
+                              onPressed: () {
+                                clearLastText();
+                              },
+                              icon: Icon(Icons.close,),
+                            ):Container(),
                             border: InputBorder.none,
                             hintText: " Search Movie by Title ",
                             hintStyle: TextStyle(

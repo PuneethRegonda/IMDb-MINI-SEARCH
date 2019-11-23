@@ -1,11 +1,19 @@
 import 'dart:async';
 
+import 'package:movie_query/features/movieSearch/presentation/bloc/queryBloc.dart';
+
 import '../../repository/resultMovieRepo.dart';
 
 class MovieSearchBloc {
   static String _movienametyped = "";
 
   String get moveName => _movienametyped;
+
+  void cleartheText() {
+    _movienametyped = "";
+  }
+
+  QueryBloc _queryBloc = QueryBloc();
 
   SearchedMovieRepository movieRepository;
 
@@ -26,6 +34,9 @@ class MovieSearchBloc {
   onData(String typedString) {
     _movienametyped = typedString;
     searchStreamsink.add(_movienametyped);
+    if (_movienametyped.length > 4) {
+      _queryBloc.streamSetToListen(_movienametyped);
+    }
     print(_movienametyped);
     if (_movienametyped.isEmpty) print("String is empty");
   }
