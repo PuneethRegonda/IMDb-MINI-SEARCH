@@ -10,6 +10,10 @@ BLOC - BUSSINESS LOGIC COMPONENT
 NO EXPLICIT SETSTATE CALLED 
 </hr>
 
+## Recent Features ADDED
+  ###### 1. Instant Realtime Search
+  ###### 2. Clear Word typed. 
+
 ### UI - DARK MODE (INSPIRATIONAL AT LAST GOT A CHANCE TO WORK ON IT)
 USED API called OMDb API
   used the call to search By TITLE.
@@ -17,6 +21,7 @@ USED API called OMDb API
 ## FUTURE TODO: 
   1. Showing the Query Time and Results found. (INSPIRATION: GOOGLE SEARCH (^_^) )
   2. Display the Result Full Description like STARCAST, BACKGROUND CONTENT, RAITING of IMDB etc.
+  3. Stop Searching the same word if it tried to search Multiple times.
 ## SHOWCASE 
 
 <div align="center">
