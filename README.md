@@ -1,16 +1,21 @@
 # IMDB - MINI-SEARCH APP
 ### Purpose - USED AS POC
+
 A Flutter Powered Application , with the OMDb API.
 
-## Things I Used
- ###  BLOC - BUSSINESS LOGIC COMPONENT
-      Using STREAMS for Networking WAS FUN (+_+)
- ### NO SETSTATE 
- 
- ### ARCHITECTURE - CLEAN CODE (INSPIRATION CLEAN CODE, REPOSITORY ARCHITECTURES, )
- 
-### TODOS:
-    Display the Query time and No Results Found. (INSPIRATION: GOOGLE SEARCH (^_^).)
-    ADD PROPER DESCRIPTION OF THE MOVIE/WEB SERIES/etc like STAR CAST, DIRECTOR,WORKING TEAM TALKS, IMDB RATING etc.
+## Things I Have Used
+</hr>
+BLOC - BUSSINESS LOGIC COMPONENT 
+    Streams Instead of any other Boring Stuff.
+NO EXPLICIT SETSTATE CALLED 
+</hr>
+
+### UI - DARK MODE (INSPIRATIONAL AT LAST GOT A CHANCE TO WORK ON IT)
+USED API called OMDb API
+  used the call to search By TITLE.
+
+## FUTURE TODO: 
+  1. Showing the Query Time and Results found. (INSPIRATION: GOOGLE SEARCH (^_^) )
+  2. Display the Result Full Description like STARCAST, BACKGROUND CONTENT, RAITING of IMDB etc.
  
    
